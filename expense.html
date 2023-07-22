@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense tracker</title>
+</head>
+<body>
+
+    <h1 style="text-align: center;" >Expense Tracker</h1>
+
+    <form action="" id="form" onsubmit="clickhandler()" >
+
+        <label for="amount">Enter amount:</label>
+        <input type="number"id="amount">
+
+
+        <label for="expensename">Name of expense:</label>
+        <input type="text"id="expensename">
+
+
+        <label for="expensecategory">Choose a category:</label> 
+    <select name="dog-names" id="expensecategory"> 
+        <option value="Rent">Rent</option> 
+        <option value="trip">Trip</option> 
+        <option value="food">Food</option> 
+        <option value="studies">Studies</option> 
+    </select>
+
+    <input id="btn" type="submit" value="Add expense">
+    </form>
+    <ul id="ul" ></ul>
+    
+</body>
+<script src="expense.js"></script>
+</html>
